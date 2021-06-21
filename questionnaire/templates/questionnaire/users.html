@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">-->
+    <title>S.AI</title>
+</head>
+    <div class="s1">
+        <a class="s2" href="{% url 'base_login' %}" >S.AI</a>
+        <a class="s7" href="{% url 'logout' %}">Выход</a>
+        <a class="s3" href="{% url 'shef' %}">Личный кабинет</a>
+    </div>
+ <style>.s1{
+            margin: 20px;
+            padding: 10px;
+            font-family: Circe;
+            font-size: 18px;
+
+    }
+        .s2{
+            font-weight: bold;
+            font-family: Circe;
+            font-size: 24px;
+            text-decoration: none;
+            color: #333333;
+
+        }
+        .s2:hover{
+            color: black;
+        }
+         .s7{
+            margin: 10px;
+            text-decoration: none;
+            color: #333333;
+            float: right;
+
+        }
+         .s7:hover{
+            color: #2f6abf;
+        }
+
+        .s3{
+            margin: 10px;
+            text-decoration: none;
+            color: #333333;
+            float: right;
+        }
+        .s3:hover{
+            color: #2f6abf;
+        }
+        .r1{
+
+            font-family: Circe;
+            font-size: 18px;
+            height: 60px;
+            width: 200px;
+            border-radius: 100px;
+            background: #2f6abf;
+            color: #f6f6f6;
+            border: none;
+            position: absolute;
+            left: 680px;
+            margin-top: 30px;
+
+        }
+        button:hover{
+            background: #0e2c96;
+        }
+        .r1_2{
+
+            font-family: Circe;
+            font-size: 18px;
+            height: 60px;
+            width: 200px;
+            border-radius: 100px;
+            background: #2f6abf;
+            color: #f6f6f6;
+            border: none;
+            position: absolute;
+            left: 680px;
+
+
+        }
+
+        .r2{
+            font-family: Circe;
+            font-size: 18px;
+            padding: 20px;
+
+        }
+        label{
+
+            padding-right:10px;
+
+        }
+        .v1 {
+            display: inline-block;
+            margin-left: 300px;
+
+        }
+
+        .v2{
+            font-family: Circe;
+            font-size: 18px;
+            text-align: left;
+
+        }
+        .r1{
+
+            font-family: Circe;
+            font-size: 18px;
+            height: 60px;
+            width: 200px;
+            border-radius: 100px;
+            background: #2f6abf;
+            color: #f6f6f6;
+            border: none;
+            position: absolute;
+            left: 680px;
+            margin-top: 180px;
+
+        }
+       .save1{
+           font-family: Circe;
+           font-size: 18px;
+
+       }
+       .save2{
+
+            font-family: Circe;
+            font-size: 18px;
+            height: 60px;
+            width: 200px;
+            border-radius: 100px;
+            background: #2f6abf;
+            color: #f6f6f6;
+            border: none;
+            position: absolute;
+            left: 680px;
+            margin-top: 10px;
+
+       }
+              .save3{
+
+            font-family: Circe;
+            font-size: 18px;
+            height: 60px;
+            width: 200px;
+            border-radius: 100px;
+            background: #2f6abf;
+            color: #f6f6f6;
+            border: none;
+            position: absolute;
+            left: 800px;
+            margin-top: 10px;
+
+       }
+                       .r2{
+
+            font-family: Circe;
+            font-size: 16px;
+            height: 60px;
+            width: 200px;
+            border-radius: 100px;
+            background: #2f6abf;
+            color: #f6f6f6;
+            border: none;
+            position: absolute;
+            left: 600px;
+            margin-top: 60px;
+
+        }
+        button:hover{
+           background: #0e2c96;
+        }
+</style>
+<div style="font-family: Circe; font-size: 18px; margin-top: 70px; margin-left: 580px">
+{% for article in articles %}
+    <p>{{ article.last_name }} {{ article.first_name }} {{ article.second_name }}</p>
+{% endfor %}
+</div>
+   <form name="b1" action="#">
+        <button type="submit" class="r2">Скачать</button>
+    </form>
+</html>

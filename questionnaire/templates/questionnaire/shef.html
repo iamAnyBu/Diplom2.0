@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">-->
+    <title>S.AI</title>
+</head>
+    <div class="s1">
+        <a class="s2" href="{% url 'base_login' %}" >S.AI</a>
+    </div>
+ <style>
+        .s1{
+            margin: 20px;
+            padding: 10px;
+            font-family: Circe;
+            font-size: 18px;
+
+    }
+        .s2{
+            font-weight: bold;
+            font-family: Circe;
+            font-size: 24px;
+            text-decoration: none;
+            color: #333333;
+
+        }
+        .s2:hover{
+            color: black;
+        }
+        .r1{
+
+            font-family: Circe;
+            font-size: 18px;
+            height: 60px;
+            width: 200px;
+            border-radius: 100px;
+            background: #2f6abf;
+            color: #f6f6f6;
+            border: none;
+            position: absolute;
+            left: 680px;
+            margin-top: 30px;
+
+        }
+
+        .r2{
+            font-family: Circe;
+            font-size: 18px;
+            padding: 20px;
+
+        }
+        label{
+
+            padding-right:10px;
+
+        }
+        button:hover{
+           background: #0e2c96;
+        }
+        .s3{
+            font-family: Circe;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 90px;
+            margin-bottom: 2px;
+        }
+        .s4{
+            font-family: Circe;
+            font-size: 18px;
+            margin-left: 90px;
+            color: gray;
+        }
+        .s5_s{
+            height: 120px;
+            width: 230px;
+            border-radius: 10px;
+            position: absolute;
+            left: 680px;
+            top: 300px;
+            font-family: Circe;
+            background: #E2EEFB;
+            border: none;
+
+        }
+        .s5_s:hover{
+            background: #BED1E4;
+        }
+        .s6{
+            font-family: Circe;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 90px;
+            padding: 250px 0px 0px 0px;
+        }
+        .s7{
+            font-family: Circe;
+            font-size: 18px;
+            margin-left: 90px;
+            color: gray;
+        }
+        .s8_s{
+            height: 60px;
+            width: 200px;
+            border-radius: 100px;
+            position: absolute;
+            left: 700px;
+            font-family: Circe;
+            background: #2F6ABF;
+            border: none;
+            color: white;
+        }
+        .s8_s:hover{
+             background: #0e2c96;
+        }
+        .s9{
+            font-family: Circe;
+            font-size: 24px;
+
+            font-weight: bold;
+            margin-left: 500px;
+
+            float:left;
+
+        }
+        .s10_s{
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            position: absolute;
+            left: 700px;
+            font-family: Circe;
+            background: #2F6ABF;
+            border: none;
+            color: white;
+        }
+</style>
+<h1 align="center" style="font-family: Circe">Личный кабинет</h1>
+<p class="s3">Рекомендации</p>
+<p class="s4">На основании ответов ваших сотрудников составлен план для обучения</p>
+<form action="{% url 'prog' %}">
+        <button class="s5_s">План обучения</button>
+</form>
+<p class="s6">Прогресс</p>
+<p class="s7">На основании ответов ваших сотрудников составлен план для обучения</p>
+<form action="{% url 'users' %}">
+        <button class="s8_s">Посмотреть результат</button>
+</form>
+<div style="margin-top: 180px">
+<p class="s9">Пригласите свой коллектив по ссылке</p>
+    <a href="{% url 'base_login' %}"><img style="width: 60px; height: 60px; margin-left: 30px; margin-top: 10px" src="https://image.flaticon.com/icons/png/512/271/271226.png"></a>
+</div>
+<p style="margin-top: 100px"></p>
+</html>

@@ -1,0 +1,13 @@
+<div>
+    <h1>Список анкет для прохождения:</h1>
+    {% for question in questionnaire.questions.all %}
+            <p>
+                {{ question.text }}
+            </p>
+        <a href="{% url 'save-answer-view' questionnaire.slug %}">
+            {{ questionnaire.name }}
+        </a>
+    {% empty %}
+        <h2>Нет опубликованных анкет для прохождения</h2>
+    {% endfor %}
+</div>
