@@ -31,6 +31,7 @@ class SaveAnswerView(View):
             last_name=request_post["last_name"],
             first_name=request_post["first_name"],
             second_name=request_post["second_name"],
+            pos=request_post["pos"],
         )
         answers = []
         for question in questionnaire.questions.all():
